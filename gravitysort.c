@@ -17,6 +17,7 @@ função gravitySort(vetor v, inteiro n)
 
 #include <stdio.h>
 
+//funcao sem criar uma matriz, dps fazer com matriz!
 void gravitySort(int v[], int n) {
     //acha o max
     int max = v[0];
@@ -50,8 +51,8 @@ void gravitySort(int v[], int n) {
             k++;
         }
         printf("Final do loop interno %d: ", val);
-        for (int i = 0; i < n; i++) {
-            printf("%d ", v[i]);
+        for (int f = 0; f < n; f++) {
+            printf("%d ", v[f]);
         }
         printf("\n");
     }
@@ -59,7 +60,7 @@ void gravitySort(int v[], int n) {
 
 //-------------------------------------------------------------------//
 int main() {
-    int v[] = {4, 11, 11, 11, 11, 8, 2, 2, 5, 9, 14};
+    int v[] = {4, 0, 11, 11, 11, 8, 2, 2, 5, 9, 14};
     int n = 11;
 
     gravitySort(v, n);
